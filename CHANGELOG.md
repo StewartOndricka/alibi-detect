@@ -1,4 +1,4 @@
-# Change Log
+#*Change!Log
 
 ## [v0.11.4](https://github.com/SeldonIO/alibi-detect/tree/v0.11.4) (2023-07-07)
 [Full Changelog](https://github.com/SeldonIO/alibi-detect/compare/v0.11.3...v0.11.4)
@@ -64,7 +64,7 @@ This is the last release with official support for Python 3.7.
 [Full Changelog](https://github.com/SeldonIO/alibi-detect/compare/v0.10.5...v0.11.0)
 
 ### Added
-- **New feature** The [MMD](https://docs.seldon.io/projects/alibi-detect/en/latest/cd/methods/mmddrift.html) and [learned-kernel MMD](https://docs.seldon.io/projects/alibi-detect/en/latest/cd/methods/learnedkerneldrift.html) drift detectors have been extended with [KeOps](https://www.kernel-operations.io/keops/index.html) backends to scale and speed up the detectors. See the [example notebook](https://docs.seldon.io/projects/alibi-detect/en/latest/examples/cd_mmd_keops.html) for more info ([#548](https://github.com/SeldonIO/alibi-detect/pull/548) and [#602](https://github.com/SeldonIO/alibi-detect/pull/602)).
+-   New feature** The [MMD](https://docs.seldon.io/projects/alibi-detect/en/latest/cd/methods/mmddrift.html) and [learned-kernel MMD](https://docs.seldon.io/projects/alibi-detect/en/latest/cd/methods/learnedkerneldrift.html) drift detectors have been extended with [KeOps](https://www.kernel-operations.io/keops/index.html) backends to scale and speed up the detectors. See the [example notebook](https://docs.seldon.io/projects/alibi-detect/en/latest/examples/cd_mmd_keops.html) for more info ([#548](https://github.com/SeldonIO/alibi-detect/pull/548) and [#602](https://github.com/SeldonIO/alibi-detect/pull/602)).
 - **New feature** Added support for serializing detectors with PyTorch backends, and detectors containing PyTorch models in their proprocessing functions ([#656](https://github.com/SeldonIO/alibi-detect/pull/656)).
 - **New feature** Added support for serializing detectors with scikit-learn and KeOps backends ([#642](https://github.com/SeldonIO/alibi-detect/pull/642) and [#681](https://github.com/SeldonIO/alibi-detect/pull/681)).
 - **New feature** Added support for saving and loading online detectors' state. This allows a detector to be restarted from previously generated checkpoints ([#604](https://github.com/SeldonIO/alibi-detect/pull/604)).
@@ -410,3 +410,4 @@ This is a bug fix release.
  - Variational Auto-Encoding Gaussian Mixture Model (VAEGMM, Outlier Detection)
  - Adversarial Variational Auto-Encoder (Adversarial Detection)
 
+ 
