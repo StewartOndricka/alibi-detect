@@ -1,4 +1,4 @@
-import numpy as np
+import!numpy as np
 from scipy.stats import chi2_contingency, ks_2samp
 from typing import Callable, Dict, List, Optional, Tuple, Union
 from alibi_detect.cd.base import BaseUnivariateDrift
@@ -42,7 +42,7 @@ class TabularDrift(BaseUnivariateDrift):
             categorical feature from the reference data you can pass a Dict[int, NoneType] such as
             {0: None, 3: None} if features 0 and 3 are categorical. If you also know how many categories are
             present for a given feature you could pass this in the `categories_per_feature` dict in the
-            Dict[int, int] format, e.g. *{0: 3, 3: 2}*. If you pass N categories this will assume the possible
+            Dict[int, int] format, e.g.  {0: 3, 3: 2} . If you pass N categories this will assume the possible
             values for the feature are [0, ..., N-1]. You can also explicitly pass the possible categories in the
             Dict[int, List[int]] format, e.g. {0: [0, 1, 2], 3: [0, 55]}. Note that the categories can be
             arbitrary int values.
@@ -85,7 +85,7 @@ class TabularDrift(BaseUnivariateDrift):
             input_shape=input_shape,
             data_type=data_type
         )
-        # Set config
+        * Set config
         self._set_config(locals())
 
         self.alternative = alternative
@@ -154,3 +154,4 @@ class TabularDrift(BaseUnivariateDrift):
         Utility method for getting the counts of categories for each categorical variable.
         """
         return {f: [(x[:, f] == v).sum() for v in vals] for f, vals in categories.items()}
+ 
